@@ -17,7 +17,16 @@ h5,
 h6 {
   color: #212121;
 }
+
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*------------------------------header----------------------------------*/
+.header {
+}
 
 .logo {
   color: var(--accent-color);
@@ -30,6 +39,8 @@ h6 {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -48,6 +59,7 @@ h6 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline-block;
 }
 .nav-list .nav-link.current {
   color: #2196f3;
@@ -70,15 +82,19 @@ h6 {
 /* ----------------------------hero----------------------------*/
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .button-hero {
@@ -91,6 +107,7 @@ h6 {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  margin-bottom: 0;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -98,9 +115,14 @@ h6 {
 }
 /*---------------------------- benefits----------------------------*/
 
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hidden {
   visibility: hidden;
 }
+
 .benefits-name {
   font-weight: 700;
   font-size: 14px;
@@ -108,9 +130,13 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 .benefits-description {
   font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -118,6 +144,11 @@ h6 {
 }
 
 /*-----------------------------work--------------------------------*/
+.work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .work-text {
   color: #212121;
 }
@@ -128,12 +159,16 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /*-----------------------------unit----------------------------------*/
 
 .unit {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 h3 {
@@ -151,17 +186,34 @@ h3 {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 
   color: var(--primary-text-color);
 }
+
+.unit-card {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.unit-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 /*----------------------------footer---------------------------------*/
 footer {
   background-color: #2f303a;
   color: var(--accent-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: #ffffff;
   font-family: Raleway;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .footer-adress {
   font-weight: 400;
@@ -169,6 +221,8 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 .footer-link {
   font-family: "Roboto";
@@ -178,15 +232,24 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+  margin-top: 0;
 }
 /*---------------portfolio.work-type--------------------------*/
 
+.work-type {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: teal;
+}
 .button-main-link:hover,
 .button-main-link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 .button-main-link {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -196,6 +259,9 @@ footer {
   color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
+  border: transparent;
+  padding: 6px 22px;
+  display: inline-block;
 }
 .example-title {
   font-weight: 700;
@@ -203,7 +269,15 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
+
+.example-card {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 .example-text {
   font-family: "Roboto";
   font-style: normal;
@@ -212,4 +286,6 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
 }
