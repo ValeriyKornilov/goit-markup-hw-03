@@ -9,6 +9,16 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -19,40 +29,46 @@ h6 {
 }
 
 .container {
-  width: 1170px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*------------------------------header----------------------------------*/
-.header {
-}
 
+.header-top {
+  display: flex;
+  align-items: center;
+}
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
+  margin-right: 93px;
 }
 
 .logo-header {
   color: black;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-}
-.contacts {
+.contacts-item {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-list {
   font-family: "Roboto";
   font-weight: 500;
@@ -60,13 +76,21 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: inline-block;
+  display: flex;
 }
+.nav-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-list .nav-link.current {
   color: #2196f3;
 }
 
 .nav-link {
   color: #212121;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link:hover,
@@ -116,13 +140,16 @@ h6 {
 /*---------------------------- benefits----------------------------*/
 
 .benefits {
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 .hidden {
   visibility: hidden;
 }
 
+.benefits-list {
+  display: flex;
+}
 .benefits-name {
   font-weight: 700;
   font-size: 14px;
@@ -145,10 +172,16 @@ h6 {
 
 /*-----------------------------work--------------------------------*/
 .work {
-  padding-top: 94px;
+  padding-top: 0;
   padding-bottom: 94px;
 }
 
+.work-list {
+  display: flex;
+}
+.work-foto {
+  margin-left: 30px;
+}
 .work-text {
   color: #212121;
 }
@@ -167,7 +200,7 @@ h2 {
 
 .unit {
   background-color: #f5f4fa;
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 
@@ -191,12 +224,17 @@ h3 {
 
   color: var(--primary-text-color);
 }
+.unit-list {
+  display: flex;
+}
 
 .unit-card {
   margin-top: 0;
   margin-bottom: 30px;
 }
-
+.unit-item {
+  margin-left: 30px;
+}
 .unit-name {
   margin-top: 0;
   margin-bottom: 10px;
@@ -238,7 +276,7 @@ footer {
 /*---------------portfolio.work-type--------------------------*/
 
 .work-type {
-  padding-top: 94px;
+  padding-top: 0px;
   padding-bottom: 94px;
 }
 .button-main-link:hover,
