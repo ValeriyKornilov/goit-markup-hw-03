@@ -38,6 +38,9 @@ h6 {
 
 /*------------------------------header----------------------------------*/
 
+.header {
+  border-bottom: solid 1px #ececec;
+}
 .header-top {
   display: flex;
   align-items: center;
@@ -119,6 +122,10 @@ h6 {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
+  width: 696px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-hero {
@@ -284,6 +291,19 @@ footer {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
+.button-main-list {
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 56px;
+  justify-content: center;
+}
+
+.example-list {
+  display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
+}
 .button-main-link {
   margin-top: 0;
   margin-bottom: 0;
@@ -299,6 +319,7 @@ footer {
   border: transparent;
   padding: 6px 22px;
   display: inline-block;
+  margin-left: 8px;
 }
 .example-title {
   font-weight: 700;
@@ -306,12 +327,13 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 0;
+  margin: 0;
+  text-align: left;
+  margin-left: 24px;
   margin-bottom: 4px;
 }
 
 .example-card {
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -325,4 +347,9 @@ footer {
   color: var(--primary-text-color);
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
+  margin-left: 24px;
+}
+.example-item {
+  margin: 15px;
 }
