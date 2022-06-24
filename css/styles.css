@@ -41,6 +41,10 @@ h6 {
 .header {
   border-bottom: solid 1px #ececec;
 }
+.nav {
+  display: flex;
+  align-items: center;
+}
 .header-top {
   display: flex;
   align-items: center;
@@ -49,6 +53,10 @@ h6 {
   color: var(--accent-color);
   font-family: Raleway;
   margin-right: 93px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-header {
@@ -139,6 +147,13 @@ h6 {
   letter-spacing: 0.06em;
   color: #ffffff;
   margin-bottom: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -147,16 +162,21 @@ h6 {
 /*---------------------------- benefits----------------------------*/
 
 .benefits {
-  padding-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
-.hidden {
+.benefits .li {
+  width: 270;
+}
+.hide-column {
   visibility: hidden;
+  pointer-events: none;
+  position: absolute;
 }
 
 .benefits-list {
   display: flex;
-  margin-left: 30px;
+  justify-content: center;
 }
 .benefits-name {
   font-weight: 700;
@@ -182,12 +202,13 @@ h6 {
 
 /*-----------------------------work--------------------------------*/
 .work {
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .work-list {
   display: flex;
+  justify-content: space-between;
 }
 .work-foto {
   margin-left: 30px;
@@ -210,7 +231,7 @@ h2 {
 
 .unit {
   background-color: #f5f4fa;
-  padding-top: 0px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -240,7 +261,7 @@ h3 {
 
 .unit-card {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 .unit-item {
   margin-left: 30px;
@@ -248,6 +269,12 @@ h3 {
 .unit-name {
   margin-top: 0;
   margin-bottom: 10px;
+}
+.unit-description {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*----------------------------footer---------------------------------*/
@@ -297,7 +324,7 @@ footer {
 
 .button-main-list {
   display: flex;
-  padding-top: 0;
+  padding-top: 94px;
   padding-bottom: 56px;
   justify-content: center;
 }
