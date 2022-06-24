@@ -109,8 +109,8 @@ h6 {
   color: var(--accent-color);
 }
 
-.contacts:hover,
-.contacts:focus {
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--accent-color);
 }
 
