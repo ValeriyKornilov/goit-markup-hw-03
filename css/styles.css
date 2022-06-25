@@ -52,6 +52,8 @@ section {
 
 .header {
   border-bottom: solid 1px #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .nav {
   display: flex;
@@ -64,7 +66,7 @@ section {
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
-  margin-right: 93px;
+  padding-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -112,8 +114,6 @@ section {
 .nav-link {
   color: #212121;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-link:hover,
@@ -389,16 +389,13 @@ footer {
   color: #212121;
   text-align: left;
   margin-bottom: 0;
-  margin-left: 24px;
-  margin-bottom: 4px;
 }
 
 .description-card {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
 
 .example-card {
@@ -416,7 +413,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: left;
-  margin-left: 24px;
+  margin: 0;
 }
 .example-item {
   margin: 15px;
