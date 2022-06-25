@@ -3,7 +3,6 @@
   --accent-color: #2196f3;
   --button-hover-color: #188ce8;
 }
-
 body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
@@ -11,7 +10,7 @@ body {
 
 .list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -28,6 +27,15 @@ h6 {
   color: #212121;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
 .container {
   width: 1230px;
   padding-left: 15px;
@@ -252,8 +260,8 @@ h3 {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
-
   color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
 .unit-list {
   display: flex;
@@ -261,12 +269,16 @@ h3 {
 
 .unit-card {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .unit-item {
   margin-left: 30px;
 }
 .unit-name {
+  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -329,11 +341,6 @@ footer {
   justify-content: center;
 }
 
-.example-list {
-  display: flex;
-  margin: -15px;
-  flex-wrap: wrap;
-}
 .button-main-link {
   margin-top: 0;
   margin-bottom: 0;
@@ -351,20 +358,35 @@ footer {
   display: inline-block;
   margin-left: 8px;
 }
+.example-list {
+  display: flex;
+  margin: -15px;
+  flex-wrap: wrap;
+}
 .example-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin: 0;
   text-align: left;
+  margin-bottom: 0;
   margin-left: 24px;
   margin-bottom: 4px;
 }
 
+.description-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .example-card {
-  margin-bottom: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .example-text {
@@ -375,11 +397,13 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 0;
   text-align: left;
   margin-left: 24px;
 }
 .example-item {
   margin: 15px;
+}
+
+.button-main-list .button-main-link .current {
+  color: #2196f3;
 }
