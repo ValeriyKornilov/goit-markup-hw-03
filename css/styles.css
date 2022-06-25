@@ -43,6 +43,10 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*------------------------------header----------------------------------*/
 
@@ -169,22 +173,26 @@ p {
 }
 /*---------------------------- benefits----------------------------*/
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .benefits .li {
   width: 270;
 }
-.hide-column {
-  visibility: hidden;
-  pointer-events: none;
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .benefits-name {
   font-weight: 700;
@@ -210,10 +218,14 @@ p {
 
 /*-----------------------------work--------------------------------*/
 .work {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
+.work-picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .work-list {
   display: flex;
   justify-content: space-between;
@@ -239,8 +251,6 @@ h2 {
 
 .unit {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 h3 {
@@ -274,7 +284,7 @@ h3 {
   max-width: 100%;
   height: auto;
 }
-.unit-item {
+.unit-item + .unit-item {
   margin-left: 30px;
 }
 .unit-name {
@@ -299,8 +309,16 @@ footer {
 .logo-footer {
   color: #ffffff;
   font-family: Raleway;
-  margin-top: 0;
-  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footer-contacts {
+  padding-top: 20px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-adress {
   font-weight: 400;
@@ -308,8 +326,6 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 9px;
 }
 .footer-link {
   font-family: "Roboto";
@@ -319,14 +335,10 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
-  margin-top: 0;
 }
 /*---------------portfolio.work-type--------------------------*/
 
 .work-type {
-  padding-top: 0px;
-  padding-bottom: 94px;
 }
 .button-main-link:hover,
 .button-main-link:focus {
@@ -336,11 +348,13 @@ footer {
 
 .button-main-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 56px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
+.button-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .button-main-link {
   margin-top: 0;
   margin-bottom: 0;
@@ -356,8 +370,12 @@ footer {
   border: transparent;
   padding: 6px 22px;
   display: inline-block;
-  margin-left: 8px;
 }
+
+.button-main-list .button-main-link .current {
+  color: #2196f3;
+}
+
 .example-list {
   display: flex;
   margin: -15px;
@@ -402,8 +420,4 @@ footer {
 }
 .example-item {
   margin: 15px;
-}
-
-.button-main-list .button-main-link .current {
-  color: #2196f3;
 }
