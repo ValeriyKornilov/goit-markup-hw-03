@@ -8,6 +8,15 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -66,7 +75,7 @@ section {
 .logo {
   color: var(--accent-color);
   font-family: Raleway;
-  padding-right: 93px;
+  margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -230,9 +239,11 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.work-foto {
-  margin-left: 30px;
+
+.work-foto:not(:last-child) {
+  margin-right: 30px;
 }
+
 .work-text {
   color: #212121;
 }
@@ -306,6 +317,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+footer .logo {
+  margin-right: 0;
+}
 .logo-footer {
   color: #ffffff;
   font-family: Raleway;
@@ -315,7 +329,7 @@ footer {
   letter-spacing: 0.03em;
 }
 .footer-contacts {
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
